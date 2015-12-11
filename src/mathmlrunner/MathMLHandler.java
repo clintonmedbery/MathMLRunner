@@ -9,6 +9,7 @@ package mathmlrunner;
  *
  * @author clintonmedbery
  */
+@SuppressWarnings("javadoc")
 public class MathMLHandler {
     
     public MathMLHandler() {

@@ -19,9 +19,13 @@ public class MathMLRunner {
         
         String baseURL = "https://dl.dropboxusercontent.com/u/2174517/mathmlSampleExpression.xml";
 	String query = "";
-        String prefix = "apply";
-	String resultQuery = "//" + prefix + ":apply[count(" + prefix + ":cn)=2]"; 
+        String prefix = "m:plus";
+	//String resultQuery = "//" + prefix + ":apply[count(" + prefix + ":cn)=2]"; 
+        String resultQuery = "";
 	String departureStateName = RestfulServiceSupport.queryWithXMLReturn( baseURL, query, resultQuery );
+        System.out.println("");
+
+        System.out.println("RESULT");
         System.out.println(departureStateName);
     }
     
